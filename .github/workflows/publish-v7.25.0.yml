@@ -1,0 +1,47 @@
+name: Publish v7.25.0
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/workflows/publish-v7.25.0.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      ASSET_NAME: migration-tool-linux-amd64-v7.25.0.zip
+      ASSET_SHA256: afed0358843d8e25e7805f06e04cd26f6f2751e6889cecac7c2502900d11db57
+      SOURCE_URL: https://packages.ones.com/migration-tool/migration-tool-linux-amd64-latest.zip
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Download and verify release asset
+        run: |
+          curl --fail --location --retry 3 "$SOURCE_URL" --output "$RUNNER_TEMP/$ASSET_NAME"
+          printf '%s  %s\n' "$ASSET_SHA256" "$RUNNER_TEMP/$ASSET_NAME" | sha256sum --check --strict
+          printf '%s  %s\n' "$ASSET_SHA256" "$ASSET_NAME" > "$RUNNER_TEMP/SHA256SUMS"
+
+      - name: Create release and upload assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view v7.25.0 >/dev/null 2>&1; then
+            gh release upload v7.25.0 \
+              "$RUNNER_TEMP/$ASSET_NAME" \
+              "$RUNNER_TEMP/SHA256SUMS" \
+              --clobber
+          else
+            gh release create v7.25.0 \
+              "$RUNNER_TEMP/$ASSET_NAME" \
+              "$RUNNER_TEMP/SHA256SUMS" \
+              --title "ONES Migration Tool v7.25.0" \
+              --notes-file changelog/v7.25.0.md \
+              --latest
+          fi
