@@ -1,0 +1,52 @@
+name: Migration problem
+description: Report a reproducible problem while migrating Jira or Confluence data.
+title: "[Migration problem]: "
+body:
+  - type: markdown
+    attributes:
+      value: Do not include passwords, tokens, cookies, private URLs, customer data, or unredacted logs.
+  - type: input
+    id: tool-version
+    attributes:
+      label: Migration Tool version
+      placeholder: v7.25.0
+    validations:
+      required: true
+  - type: input
+    id: ones-version
+    attributes:
+      label: ONES version
+    validations:
+      required: true
+  - type: dropdown
+    id: source
+    attributes:
+      label: Source system
+      options:
+        - Jira Server
+        - Jira Data Center
+        - Jira Cloud
+        - Confluence Server
+        - Confluence Data Center
+        - Confluence Cloud
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the expected behavior and the actual behavior.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest reproducible sequence without sensitive information.
+    validations:
+      required: true
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Redacted diagnostics
+      description: Add relevant error messages or logs after removing secrets, private URLs, and customer data.

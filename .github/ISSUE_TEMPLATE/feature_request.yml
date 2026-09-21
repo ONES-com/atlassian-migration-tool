@@ -1,0 +1,21 @@
+name: Feature request
+description: Propose a specific improvement to the migration tool or its documentation.
+title: "[Feature request]: "
+body:
+  - type: textarea
+    id: scenario
+    attributes:
+      label: Migration scenario
+      description: Describe the Jira or Confluence migration problem you need to solve.
+    validations:
+      required: true
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+    validations:
+      required: true
+  - type: textarea
+    id: current-workaround
+    attributes:
+      label: Current workaround

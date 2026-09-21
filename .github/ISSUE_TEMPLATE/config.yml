@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Migration questions and planning
+    url: https://github.com/ONES-com/atlassian-migration-tool/discussions
+    about: Ask general migration questions and discuss migration plans.
+  - name: Private ONES migration support
+    url: https://ones.com/contact_us/migration
+    about: Contact ONES when your request includes sensitive or customer-specific information.

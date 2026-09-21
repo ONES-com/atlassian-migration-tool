@@ -1,0 +1,17 @@
+title: "[Question] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: Ask a general question about planning or running a migration. Do not post secrets, customer data, private URLs, or unredacted logs.
+  - type: textarea
+    id: question
+    attributes:
+      label: Question
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Migration context
+      description: Include the source product, deployment type, and approximate migration scope when relevant.

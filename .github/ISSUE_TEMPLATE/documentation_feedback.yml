@@ -1,0 +1,21 @@
+name: Documentation feedback
+description: Report an unclear, missing, or incorrect migration instruction.
+title: "[Docs]: "
+body:
+  - type: input
+    id: page
+    attributes:
+      label: Page or section
+      description: Paste the public URL or name the Wiki page and section.
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is unclear or incorrect?
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested change

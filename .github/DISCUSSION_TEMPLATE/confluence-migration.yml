@@ -1,0 +1,25 @@
+title: "[Confluence migration] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: Discuss Confluence migration planning and use cases. Use an Issue for a reproducible product problem.
+  - type: textarea
+    id: source
+    attributes:
+      label: Confluence environment
+      description: Server, Data Center, or Cloud; include the version when known.
+    validations:
+      required: true
+  - type: textarea
+    id: goal
+    attributes:
+      label: What are you trying to migrate?
+    validations:
+      required: true
+  - type: textarea
+    id: question
+    attributes:
+      label: Question or discussion topic
+    validations:
+      required: true
