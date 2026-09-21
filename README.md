@@ -2,7 +2,7 @@
 
 The ONES Migration Tool provides a guided path for migrating Jira and Confluence data to ONES Self-Hosted. This repository is the official place to download the tool, review release history, and find self-service migration guidance.
 
-[Download the latest release](https://github.com/ONES-com/atlassian-migration-tool/releases/latest) · [Migration guide](https://docs.ones.com/import-data-into-ones/?utm_campaign=379987669-MKT_Outreach&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool) · [Migration Wiki](https://github.com/ONES-com/atlassian-migration-tool/wiki) · [Contact ONES](https://ones.com/contact_us/migration/?utm_campaign=379987669-MKT_Outreach&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool)
+[Download the latest release](https://github.com/ONES-com/atlassian-migration-tool/releases/latest) · [Migration guide](https://docs.ones.com/import-data-into-ones/?utm_campaign=github-ones-com&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool) · [Migration Wiki](https://github.com/ONES-com/atlassian-migration-tool/wiki) · [Contact ONES](https://ones.com/contact_us/migration/?utm_campaign=github-ones-com&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool)
 
 ## Download
 
