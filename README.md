@@ -2,7 +2,7 @@
 
 The ONES Migration Tool provides a guided path for migrating Jira and Confluence data to ONES Self-Hosted. This repository is the official place to download the tool, review release history, and find self-service migration guidance.
 
-[Download the latest release](https://github.com/ONES-com/atlassian-migration-tool/releases/latest) · [Migration guide](https://docs.ones.com/import-data-into-ones/) · [Migration Wiki](https://github.com/ONES-com/atlassian-migration-tool/wiki) · [Contact ONES](https://ones.com/contact_us/migration)
+[Download the latest release](https://github.com/ONES-com/atlassian-migration-tool/releases/latest) · [Migration guide](https://docs.ones.com/import-data-into-ones/?utm_campaign=379987669-MKT_Outreach&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool) · [Migration Wiki](https://github.com/ONES-com/atlassian-migration-tool/wiki) · [Contact ONES](https://ones.com/contact_us/migration/?utm_campaign=379987669-MKT_Outreach&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool)
 
 ## Download
 
@@ -18,11 +18,11 @@ To run the migration tool, download the ZIP package listed under **Assets** in t
 
 | Source | Target | Start here |
 | --- | --- | --- |
-| Jira Server or Data Center | ONES Self-Hosted | [Migration Tool Guide](https://docs.ones.com/import-data-into-ones/migration-tool-guide/) |
-| Confluence Server or Data Center | ONES Wiki Self-Hosted | [Migration Tool Guide](https://docs.ones.com/import-data-into-ones/migration-tool-guide/) |
-| Confluence Cloud | ONES Wiki Self-Hosted | [Atlassian Cloud Migration Guide](https://docs.ones.com/import-data-into-ones/atlassian-cloud-migration-guide/) |
-| Jira Cloud | ONES Self-Hosted | [Contact ONES before starting](https://ones.com/contact_us/migration) |
-| Jira or Confluence | ONES Cloud | [Contact ONES for assistance](https://ones.com/contact_us/migration) |
+| Jira Server or Data Center | ONES Self-Hosted | [Migration Tool Guide](https://docs.ones.com/import-data-into-ones/migration-tool-guide/?utm_campaign=379987669-MKT_Outreach&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool) |
+| Confluence Server or Data Center | ONES Wiki Self-Hosted | [Migration Tool Guide](https://docs.ones.com/import-data-into-ones/migration-tool-guide/?utm_campaign=379987669-MKT_Outreach&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool) |
+| Confluence Cloud | ONES Wiki Self-Hosted | [Atlassian Cloud Migration Guide](https://docs.ones.com/import-data-into-ones/atlassian-cloud-migration-guide/?utm_campaign=379987669-MKT_Outreach&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool) |
+| Jira Cloud | ONES Self-Hosted | [Contact ONES before starting](https://ones.com/contact_us/migration/?utm_campaign=379987669-MKT_Outreach&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool) |
+| Jira or Confluence | ONES Cloud | [Contact ONES for assistance](https://ones.com/contact_us/migration/?utm_campaign=379987669-MKT_Outreach&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool) |
 
 ## Before You Start
 
@@ -46,7 +46,7 @@ See [Infrastructure and Network Requirements](https://github.com/ONES-com/atlass
 6. Run the migration and review its progress.
 7. Copy attachments, rebuild indexes, and verify the migrated data.
 
-The detailed operating steps are maintained in the [official migration documentation](https://docs.ones.com/import-data-into-ones/) and summarized in this repository's [Wiki](https://github.com/ONES-com/atlassian-migration-tool/wiki).
+The detailed operating steps are maintained in the [official migration documentation](https://docs.ones.com/import-data-into-ones/?utm_campaign=379987669-MKT_Outreach&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool) and summarized in this repository's [Wiki](https://github.com/ONES-com/atlassian-migration-tool/wiki).
 
 ## Migration Methods
 
@@ -58,16 +58,16 @@ Jira migrations can use different source-data methods depending on the source en
 | Jira backup package | Repeatable, point-in-time migration from Jira Server or Data Center |
 | Read-only database connection | Large Jira Server or Data Center migrations or project-scoped migration |
 
-Review [Migration Methods: API vs. Backup vs. Database](https://docs.ones.com/import-data-into-ones/migration-methods/) before choosing a method.
+Review [Migration Methods: API vs. Backup vs. Database](https://docs.ones.com/import-data-into-ones/migration-methods/?utm_campaign=379987669-MKT_Outreach&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool) before choosing a method.
 
 ## Documentation
 
-- [Jira & Confluence Migration](https://docs.ones.com/import-data-into-ones/)
-- [Migration Tool Guide](https://docs.ones.com/import-data-into-ones/migration-tool-guide/)
-- [Atlassian Cloud Migration Guide](https://docs.ones.com/import-data-into-ones/atlassian-cloud-migration-guide/)
-- [Server & Network Requirements](https://docs.ones.com/import-data-into-ones/server-network-requirements/)
-- [Migration Data Scope](https://docs.ones.com/import-data-into-ones/migration-data-scope/)
-- [Troubleshooting & Maintenance](https://docs.ones.com/import-data-into-ones/troubleshooting-maintenance/)
+- [Jira & Confluence Migration](https://docs.ones.com/import-data-into-ones/?utm_campaign=379987669-MKT_Outreach&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool)
+- [Migration Tool Guide](https://docs.ones.com/import-data-into-ones/migration-tool-guide/?utm_campaign=379987669-MKT_Outreach&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool)
+- [Atlassian Cloud Migration Guide](https://docs.ones.com/import-data-into-ones/atlassian-cloud-migration-guide/?utm_campaign=379987669-MKT_Outreach&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool)
+- [Server & Network Requirements](https://docs.ones.com/import-data-into-ones/server-network-requirements/?utm_campaign=379987669-MKT_Outreach&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool)
+- [Migration Data Scope](https://docs.ones.com/import-data-into-ones/migration-data-scope/?utm_campaign=379987669-MKT_Outreach&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool)
+- [Troubleshooting & Maintenance](https://docs.ones.com/import-data-into-ones/troubleshooting-maintenance/?utm_campaign=379987669-MKT_Outreach&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool)
 - [Repository changelog](./changelog/)
 
 ## Feedback and Support
@@ -76,4 +76,4 @@ Use [GitHub Discussions](https://github.com/ONES-com/atlassian-migration-tool/di
 
 Use [GitHub Issues](https://github.com/ONES-com/atlassian-migration-tool/issues) for reproducible migration problems, installation problems, download problems, and documentation corrections. Do not post passwords, tokens, cookies, private URLs, customer data, or unredacted logs in public issues.
 
-For migration assistance involving a customer environment or sensitive information, [contact ONES privately](https://ones.com/contact_us/migration).
+For migration assistance involving a customer environment or sensitive information, [contact ONES privately](https://ones.com/contact_us/migration/?utm_campaign=379987669-MKT_Outreach&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool).
