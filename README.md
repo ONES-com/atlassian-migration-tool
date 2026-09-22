@@ -1,18 +1,14 @@
 # ONES Migration Tool
 
-The ONES Migration Tool provides a guided path for migrating Jira and Confluence data to ONES Self-Hosted. This repository is the official place to download the tool, review release history, and find self-service migration guidance.
+The ONES Migration Tool provides a guided path for migrating Jira and Confluence data to ONES Self-Hosted. This repository provides release information and self-service migration guidance for the ONES Migration Tool.
 
-[Download the latest release](https://github.com/ONES-com/atlassian-migration-tool/releases/latest) · [Migration guide](https://docs.ones.com/import-data-into-ones/?utm_campaign=github-ones-com&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool) · [Migration Wiki](https://github.com/ONES-com/atlassian-migration-tool/wiki) · [Contact ONES](https://ones.com/contact_us/migration/?utm_campaign=github-ones-com&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool)
+[Migration guide](https://docs.ones.com/import-data-into-ones/?utm_campaign=github-ones-com&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool) · [Migration Wiki](https://github.com/ONES-com/atlassian-migration-tool/wiki) · [Contact ONES](https://ones.com/contact_us/migration/?utm_campaign=github-ones-com&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool)
 
-## Download
+## Availability
 
-The current public package is **v7.25.0 for Linux AMD64**.
+The current release is **v7.25.0 for Linux AMD64**.
 
-- [Download `migration-tool-linux-amd64-v7.25.0.zip`](https://github.com/ONES-com/atlassian-migration-tool/releases/download/v7.25.0/migration-tool-linux-amd64-v7.25.0.zip)
-- [Download `SHA256SUMS`](https://github.com/ONES-com/atlassian-migration-tool/releases/download/v7.25.0/SHA256SUMS)
-- [Read the v7.25.0 release notes](https://github.com/ONES-com/atlassian-migration-tool/releases/tag/v7.25.0)
-
-To run the migration tool, download the ZIP package listed under **Assets** in the GitHub Release. GitHub also displays automatically generated source archives; those archives are repository snapshots and are not the migration tool package.
+The ONES Migration Tool is provided for supported ONES Self-Hosted migration projects. To obtain the appropriate package and confirm compatibility with your environment, [contact ONES](https://ones.com/contact_us/migration/?utm_campaign=github-ones-com&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool).
 
 ## Choose Your Migration Path
 
@@ -38,7 +34,7 @@ See [Infrastructure and Network Requirements](https://github.com/ONES-com/atlass
 
 ## Migration Workflow
 
-1. Download and extract the migration tool package.
+1. Obtain the appropriate migration tool package from ONES and extract it.
 2. Start the tool and choose the product type, HTTP port, and cache path.
 3. Verify connectivity between Jira or Confluence, the migration tool, and ONES.
 4. Prepare the source data and create a migration task.
