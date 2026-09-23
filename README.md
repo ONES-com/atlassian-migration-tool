@@ -6,7 +6,7 @@ The ONES Migration Tool provides a guided path for migrating Jira and Confluence
 
 ## Availability
 
-The current release is **v7.25.0 for Linux AMD64**.
+The current release is **v7.30.0 for Linux AMD64**.
 
 The ONES Migration Tool is provided for supported ONES Self-Hosted migration projects. To obtain the appropriate package and confirm compatibility with your environment, [contact ONES](https://ones.com/contact_us/migration/?utm_campaign=github-ones-com&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool).
 
