@@ -1,0 +1,78 @@
+name: Verify published release
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: Published release to verify
+        required: true
+        type: choice
+        options:
+          - v7.43.0
+          - v7.30.0
+
+permissions:
+  contents: read
+
+concurrency:
+  group: verify-release-${{ inputs.version }}
+  cancel-in-progress: false
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+      RELEASE_VERSION: ${{ inputs.version }}
+    steps:
+      - name: Check out release records
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Verify package against the committed release record
+        shell: bash
+        run: |
+          set -euo pipefail
+          case "$RELEASE_VERSION" in
+            v7.43.0|v7.30.0) ;;
+            *) echo "Unsupported release version" >&2; exit 1 ;;
+          esac
+
+          export ASSET_NAME="migration-tool-linux-amd64-$RELEASE_VERSION.zip"
+          export ASSET_DIR
+          ASSET_DIR=$(mktemp -d "$RUNNER_TEMP/migration-release.XXXXXX")
+          trap 'rm -rf "$ASSET_DIR"' EXIT
+
+          gh release download "$RELEASE_VERSION" \
+            --repo "$GITHUB_REPOSITORY" \
+            --pattern "$ASSET_NAME" \
+            --pattern SHA256SUMS \
+            --dir "$ASSET_DIR"
+
+          python3 - <<'PY'
+          import hashlib
+          import os
+          import re
+          from pathlib import Path
+
+          version = os.environ["RELEASE_VERSION"]
+          name = os.environ["ASSET_NAME"]
+          asset_dir = Path(os.environ["ASSET_DIR"])
+          record = Path("changelog", f"{version}.md").read_text()
+          matches = re.findall(r"(?m)^([0-9a-f]{64})  " + re.escape(name) + r"$", record)
+          if len(matches) != 1:
+              raise SystemExit("Expected exactly one package checksum in the release record")
+          expected = matches[0]
+          checksum_lines = (asset_dir / "SHA256SUMS").read_text().splitlines()
+          if checksum_lines != [f"{expected}  {name}"]:
+              raise SystemExit("Published SHA256SUMS does not match the committed release record")
+          digest = hashlib.sha256()
+          with (asset_dir / name).open("rb") as package:
+              for chunk in iter(lambda: package.read(1024 * 1024), b""):
+                  digest.update(chunk)
+          if digest.hexdigest() != expected:
+              raise SystemExit("Package checksum does not match the committed release record")
+          print(f"Verified {name}: {expected}")
+          PY

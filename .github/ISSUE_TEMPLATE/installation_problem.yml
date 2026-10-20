@@ -9,7 +9,8 @@ body:
     id: tool-version
     attributes:
       label: Migration Tool version
-      placeholder: v7.25.0
+      description: Enter the exact version of the package you are using.
+      placeholder: "Your installed version (for example, v7.43.0)"
     validations:
       required: true
   - type: input

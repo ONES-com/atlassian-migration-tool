@@ -2,9 +2,9 @@
 
 Choose the channel that matches your request.
 
-## GitHub Discussions
+## Migration Questions and Planning
 
-Use [Discussions](https://github.com/ONES-com/atlassian-migration-tool/discussions) for:
+[Contact ONES](https://ones.com/contact_us/migration/?utm_campaign=github-ones-com&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool) for:
 
 - Migration planning questions
 - Choosing a migration path or data-source method
