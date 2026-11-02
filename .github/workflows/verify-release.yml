@@ -8,6 +8,7 @@ on:
         required: true
         type: choice
         options:
+          - v7.46.1
           - v7.43.0
           - v7.30.0
 
@@ -36,7 +37,7 @@ jobs:
         run: |
           set -euo pipefail
           case "$RELEASE_VERSION" in
-            v7.43.0|v7.30.0) ;;
+            v7.46.1|v7.43.0|v7.30.0) ;;
             *) echo "Unsupported release version" >&2; exit 1 ;;
           esac
 

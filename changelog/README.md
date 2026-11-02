@@ -4,7 +4,8 @@ This changelog tracks public ONES Migration Tool releases distributed through th
 
 | Version | First GitHub availability | Package status |
 | --- | --- | --- |
-| [v7.43.0](./v7.43.0.md) | 2026-10-15 | Current Linux AMD64 package |
+| [v7.46.1](./v7.46.1.md) | 2026-11-02 | Current Linux AMD64 package |
+| [v7.43.0](./v7.43.0.md) | 2026-10-15 | Previous release |
 | [v7.30.0](./v7.30.0.md) | 2026-09-23 | Previous release; package and checksum updated on 2026-10-08 |
 | [v7.25.0](./v7.25.0.md) | 2026-09-21 | Historical distribution record; installable package and checksum are no longer available on GitHub |
 

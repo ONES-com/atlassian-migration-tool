@@ -10,7 +10,7 @@ body:
     attributes:
       label: Migration Tool version
       description: Enter the exact version of the package you are using.
-      placeholder: "Your installed version (for example, v7.43.0)"
+      placeholder: "Enter your installed package version"
     validations:
       required: true
   - type: input

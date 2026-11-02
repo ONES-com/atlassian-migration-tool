@@ -6,7 +6,7 @@ The ONES Migration Tool provides a guided path for migrating Jira and Confluence
 
 ## Availability
 
-The current release is **v7.43.0 for Linux AMD64**, published on **2026-10-15**.
+The current release is **v7.46.1 for Linux AMD64**, published on **2026-11-02**.
 
 The ONES Migration Tool is provided for supported ONES Self-Hosted migration projects. To obtain the appropriate package and confirm compatibility with your environment, [contact ONES](https://ones.com/contact_us/migration/?utm_campaign=github-ones-com&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool).
 
@@ -22,7 +22,7 @@ The ONES Migration Tool is provided for supported ONES Self-Hosted migration pro
 
 ## Before You Start
 
-- The target ONES deployment must be **Self-Hosted**. For Migration Tool **v7.43.0**, ONES **7.21.0 or later** is recommended. Confirm compatibility with ONES before using an earlier target version.
+- The target ONES deployment must be **Self-Hosted**. For Migration Tool **v7.46.1**, ONES **7.21.0 or later** is recommended. Confirm compatibility with ONES before using an earlier target version.
 - Install the tool on a server that can communicate with both the source system and the target ONES environment.
 - Keep at least **20 GB of free space** available for the migration tool cache.
 - The default migration tool port is `5001` for Jira. Confluence connectivity checks use `5002`.
