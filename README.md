@@ -5,7 +5,7 @@ The ONES Migration Tool provides a guided path for migrating Jira and Confluence
 [Migration guide](https://docs.ones.com/import-data-into-ones/?utm_campaign=github-ones-com&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool) · [Migration Wiki](https://github.com/ONES-com/atlassian-migration-tool/wiki) · [Contact ONES](https://ones.com/contact_us/migration/?utm_campaign=github-ones-com&utm_source=github&utm_medium=onesgithub&utm_content=ONESMigrationTool)
 
 > [!NOTE]
-> Starting with v3.0.0, ONES Migration Tool uses an independent versioning scheme.
+> 🎉 Starting with v3.0.0, ONES Migration Tool uses an independent versioning scheme.
 
 ## Availability
 
